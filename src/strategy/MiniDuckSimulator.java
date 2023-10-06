@@ -9,10 +9,22 @@ public class MiniDuckSimulator {
 		mallard.fly();
 		mallard.swim();
    
-		Duck redHead = new RedHeadDuck();
-		redHead.display();
-		redHead.quack();
-		redHead.fly();
-		redHead.swim();
+		Duck redhead = new RedheadDuck();
+		redhead.display();
+		redhead.quack();
+		redhead.fly();
+		redhead.swim();
+
+		Duck rubber = new RubberDuck();
+		rubber.display();
+		rubber.quack();
+		rubber.fly();
+		rubber.swim();
+
+		Duck decoy = new DecoyDuck();
+		decoy.display();
+		decoy.quack();
+		decoy.fly();
+		decoy.swim();
 	}
 }
