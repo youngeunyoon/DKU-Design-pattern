@@ -21,7 +21,7 @@ public class WeatherData {
 		this.pressure = pressure;
 		measurementsChanged();
 	}
-	public void setHumidity(float humiditye) {
+	public void setHumidity(float humidity) {
 		this.humidity = humidity;
 		measurementsChanged();
 	}
