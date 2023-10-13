@@ -1,9 +1,22 @@
 package observer;
 
+import java.util.ArrayList;
+
 public class WeatherData {
+	private ArrayList<WeatherDataDisplay> observers = new ArrayList<>();
 	private float temperature;
 	private float humidity;
 	private float pressure;
+
+	public void addDisplay(WeatherDataDisplay display) {
+		this.observers.add(display);
+	}
+
+	public void notifyEverybody() {
+		for(WeatherDataDisplay display: observers) {
+			display.display();
+		}
+	}
 
 	public void measurementsChanged() {
 	}
