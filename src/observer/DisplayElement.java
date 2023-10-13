@@ -1,5 +1,5 @@
 package observer;
 
-public interface WeatherDataDisplay {
+public interface DisplayElement {
     public void display();
 }
